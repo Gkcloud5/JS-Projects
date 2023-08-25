@@ -7,6 +7,8 @@
 
 body{
     background: #16697A;
+    width: 100%;
+    height: auto;
 }
 
 .card{
@@ -105,3 +107,43 @@ body{
     font-weight: bold;
     display: none;
 }
+
+@media only screen and (max-width: 600px) {
+    .card{
+        width: 95%;
+        margin: 100px auto;
+        max-width: 100%;
+        padding: 10px 15px;
+    }
+    .search{
+        margin-top: 5px;
+    }
+    .search input{
+        padding: 8px 10px;
+        height: 50px;
+        border-radius: 30px;
+        flex:1;
+        margin-right: 0px;
+        font-size: 18px;
+    }
+    
+    .search button{
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        margin-left: 5px;
+    }
+    
+    .search button img{
+        width: 16px;
+    }
+    .col img{
+        width: 30px;
+        margin-right: 8px;
+    }
+    
+    .humidity, .wind {
+        font-size: 18px;
+        margin-top: -6px;
+    }
+  }
